@@ -7,6 +7,7 @@ import AddStudent from './pages/AddStudent.jsx';
 import PrivateRoute from './components/PrivateRoutes.jsx';
 import StudentDetails from './pages/StudentDetails.jsx';
 import LandingPage from './pages/LandingPage.jsx';
+import PageNotFound from './pages/PageNotFound.jsx';
 
 
 
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/" element={<LandingPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/sign-up" element={<SignUp />} />
+      <Route path="*" element={<PageNotFound />} />
       <Route
         path="/dashboard"
         element={
